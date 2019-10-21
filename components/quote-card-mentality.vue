@@ -39,17 +39,17 @@ export default {
     border-left: solid 0em #fff;
     box-shadow: 0 .21875rem .875rem 0 rgba(47, 64, 176, 0.2);
 }
-.igs-breakpoint-7 .igs-card-quote-card-mentality,
-.igs-breakpoint-9 .igs-card-quote-card-mentality{
+.igs-breakpoint-6 .igs-card-quote-card-mentality,
+.igs-breakpoint-8 .igs-card-quote-card-mentality{
     opacity: 0;
     color: rgba(0,0,0,0);
     border-left: solid 2em #fff;
     border-right: solid 0em #1c43db;
 
 }
+.igs-breakpoint-6 .igs-card-quote-card-mentality,
 .igs-breakpoint-7 .igs-card-quote-card-mentality,
-.igs-breakpoint-8 .igs-card-quote-card-mentality,
-.igs-breakpoint-9 .igs-card-quote-card-mentality {
+.igs-breakpoint-8 .igs-card-quote-card-mentality {
     display:block;
 }
 </style>

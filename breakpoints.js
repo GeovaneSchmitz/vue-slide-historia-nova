@@ -38,12 +38,12 @@ module.exports = [
   },
   {
     index: 7,
-    label: 'Antipositivismo',
+    label: 'História das Mentalidades',
     showLabel: true
   },
   {
     index: 8,
-    label: 'História das Mentalidades',
+    label: 'Antipositivismo',
     showLabel: true
   }
 ]
