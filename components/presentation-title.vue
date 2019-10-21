@@ -37,11 +37,10 @@ export default {
   display: none;
   transition: all .50s;
   transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
-  font-family: 'Gilroy', sans-serif;
+  font-family: 'Merriweather', serif;
   color: #87101e;
   font-size: 6em;
   margin-bottom: 2em;
-  font-weight: 800;
 }
 .igs-title-wrapper {
   transition: all .50s;

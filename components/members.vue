@@ -18,7 +18,7 @@ export default {
 .igs-member-1,
 .igs-member-2,
 .igs-member-3 {
-  font-family: 'Gilroy', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color:#000;
   font-size: 3em;
   margin-top: 0.3em;

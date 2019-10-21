@@ -53,8 +53,7 @@ export default {
   display:block;
   font-size: 12em;
   transition: all .50s;
-  font-family: 'Gilroy', sans-serif;
-  font-weight: 800;
+  font-family: 'Merriweather', serif;
   font-size: 5em;
   left: 2em;
   top:1em;

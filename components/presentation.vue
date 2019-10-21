@@ -33,22 +33,8 @@ export default {
     }
   },
   mounted () {
-    window.addEventListener('resize', this.resize)
-    this.resize()
   },
   methods: {
-    resize () {
-      if ((window.innerWidth / window.innerHeight) > (16 / 9)) {
-        const width = (window.innerHeight / 9 * 16)
-        this.$refs.presentation.style.height = window.innerHeight + 'px'
-        this.$refs.presentation.style.width = width + 'px'
-        this.$refs.presentation.style.fontSize = width / 100 + 'px'
-      } else {
-        this.$refs.presentation.style.height = (window.innerWidth / 16 * 9) + 'px'
-        this.$refs.presentation.style.width = window.innerWidth + 'px'
-        this.$refs.presentation.style.fontSize = window.innerWidth / 100 + 'px'
-      }
-    }
   }
 }
 </script>
@@ -66,11 +52,6 @@ export default {
   align-items: center;
   z-index: 0;
 }
-@media (min-aspect-ratio: 16/9) {
-  .igs-presentation-wrapper {
-    flex-direction: column;
-  }
-}
 
 .igs-presentation {
   z-index: 0;
@@ -78,5 +59,19 @@ export default {
   background-color: #fff;
   overflow: hidden;
   position: absolute;
+  height: 56.25vw;
+  width: 100vw;
+  font-size: 1vw;
 }
+@media (min-aspect-ratio: 16/9) {
+  .igs-presentation-wrapper {
+    flex-direction: column;
+  }
+  .igs-presentation {
+    height:100vh;
+    width: 177.77777777vh;
+    font-size: 1.7777777777vh;
+  }
+}
+
 </style>

@@ -105,7 +105,7 @@ export default {
 .igs-toolbar-button,
 .igs-counter {
   font-size: 2rem;
-  font-family: "Gilroy", sans-serif;
+  font-family: 'Segoe UI', Helvetica, sans-serif;
   color: rgba(255, 255, 255, 0.8);
   padding: 0 1rem 0 1rem;
 }

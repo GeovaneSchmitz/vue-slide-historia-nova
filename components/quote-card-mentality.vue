@@ -21,6 +21,7 @@ export default {
     font-size: 0.7em;
     margin-top: 1em;
     text-align: right;
+    font-family: Montserrat, sans-serif;
 }
 .igs-card-quote-card-mentality {
     text-indent: 1em;
