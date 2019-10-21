@@ -1,11 +1,11 @@
 <template lang="pug">
-.igs-toolbar-wrapper(@click="mouseClick($event)", @mousemove="mouseMove" :class="{'igs-toolbar-hide-cursor': !toolbarActive}")
+.igs-toolbar-wrapper(@touchstart="swipe" @touchend="swipe" @click="mouseClick($event)", @mousemove="mouseMove" :class="{'igs-toolbar-hide-cursor': !toolbarActive}")
   .igs-toolbar(:class='{ "igs-toolbar-active": toolbarActive}', @pointerout="toolbarOut", @pointerover="toolbarOver", ref="toolbar")
-    .igs-toolbar-button(@click="goToPreviousBreakpoint()")
+    .igs-toolbar-button(@click="toolbarToPrevious()")
       |<
     .igs-counter
       |{{currentBreakpoint.label}}
-    .igs-toolbar-button(@click="goToNextBreakpoint()")
+    .igs-toolbar-button(@click="toolbarToNext()")
       |>
 </template>
 
@@ -19,12 +19,11 @@ export default {
   },
   data () {
     return {
-      timeoutHideToolbar: 500,
+      timeoutHideToolbar: 1000,
       toolbarActive: false,
-      toolbarFocus: false
+      toolbarFocus: false,
+      swipeXpos: 0
     }
-  },
-  mounted () {
   },
   methods: {
     toolbarOver () {
@@ -32,12 +31,38 @@ export default {
       this.toolbarActive = true
     },
     toolbarOut () {
+      if (this.intervalHideToolbar) {
+        clearTimeout(this.intervalHideToolbar)
+      }
       this.toolbarFocus = false
-      setTimeout(() => {
+      this.intervalHideToolbar = setTimeout(() => {
         if (!this.toolbarFocus) {
           this.toolbarActive = false
         }
       }, this.timeoutHideToolbar)
+    },
+    swipe (event) {
+      if (event.srcElement === this.$el) {
+        if (event.type === 'touchstart') {
+          this.swipeXpos = event.changedTouches[0].clientX
+        } else {
+          event.preventDefault()
+          const swipeXposEnd = event.changedTouches[0].clientX
+          if (swipeXposEnd < this.swipeXpos + 10) {
+            this.goToNextBreakpoint()
+          } else {
+            this.goToPreviousBreakpoint()
+          }
+        }
+      }
+    },
+    toolbarToNext () {
+      this.toolbarOut()
+      this.goToNextBreakpoint()
+    },
+    toolbarToPrevious () {
+      this.toolbarOut()
+      this.goToPreviousBreakpoint()
     },
     mouseClick (event) {
       if (event.srcElement === this.$el) {
