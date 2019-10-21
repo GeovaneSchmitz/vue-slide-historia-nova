@@ -21,7 +21,7 @@ export default {
 }
 
 .igs-background-cover{
-    background-color: #1c43db;
+    background-color: #87101e;
     width: 40em;
     height: 100em;
     z-index: 1;

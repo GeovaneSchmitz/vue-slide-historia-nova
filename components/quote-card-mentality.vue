@@ -35,7 +35,7 @@ export default {
     padding: 1.5em;
     color: rgba(0,0,0,1);
     border-radius: 0.2em;
-    border-right: solid 2em #1c43db;
+    border-right: solid 2em #87101e;
     border-left: solid 0em #fff;
     box-shadow: 0 .21875rem .875rem 0 rgba(47, 64, 176, 0.2);
 }
@@ -44,7 +44,7 @@ export default {
     opacity: 0;
     color: rgba(0,0,0,0);
     border-left: solid 2em #fff;
-    border-right: solid 0em #1c43db;
+    border-right: solid 0em #87101e;
 
 }
 .igs-breakpoint-6 .igs-card-quote-card-mentality,

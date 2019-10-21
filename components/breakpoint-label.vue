@@ -49,7 +49,7 @@ export default {
 
 .igs-breakpoint-label {
   opacity:1;
-  color: #1c43db;
+  color: #87101e;
   display:block;
   font-size: 12em;
   transition: all .50s;
