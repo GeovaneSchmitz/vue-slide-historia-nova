@@ -17,7 +17,8 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' },
-      { rel: 'stylesheet', href: 'resouces/Gilroy/css/Gilroy.css' }
+      { rel: 'stylesheet', href: 'resouces/Gilroy/css/Gilroy.css' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Merriweather&display=swap' }
     ]
   },
   /*

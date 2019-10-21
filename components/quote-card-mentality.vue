@@ -6,7 +6,7 @@
     |que os sinos chamavam para o ofício. Emocionado,
     |ele parou para assistir à missa e orar devotamente.”
     .igs-card-quote-card-mentality-reference
-        |Philippe Áries (1990) recorda uma história contada por Febvre
+        |Philippe Áries (1990) recordando uma história contada por Febvre
 </template>
 
 <script>
@@ -26,7 +26,7 @@ export default {
     text-indent: 1em;
     display:none;
     transition: all .25s;
-    font-family: 'Gilroy', sans-serif;
+    font-family: 'Merriweather', serif;
     font-size: 2.5em;
     width: 29em;
     margin: 8em 4em;
