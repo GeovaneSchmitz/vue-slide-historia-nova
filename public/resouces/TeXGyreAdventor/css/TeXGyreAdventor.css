@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'TeXGyreAdventor';
+    src: url('../webfonts/subset-TeXGyreAdventor-Bold.woff2') format('woff2'),
+        url('../webfonts/subset-TeXGyreAdventor-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+/* 
+@font-face {
+    font-family: 'TeXGyreAdventor';
+    src: url('subset-TeXGyreAdventor-Italic.woff2') format('woff2'),
+        url('subset-TeXGyreAdventor-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+ */
+@font-face {
+    font-family: 'TeXGyreAdventor';
+    src: url('../webfonts/subset-TeXGyreAdventor-Regular.woff2') format('woff2'),
+        url('../webfonts/subset-TeXGyreAdventor-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* @font-face {
+    font-family: 'TeXGyreAdventor';
+    src: url('subset-TeXGyreAdventor-BoldItalic.woff2') format('woff2'),
+        url('subset-TeXGyreAdventor-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+ */
