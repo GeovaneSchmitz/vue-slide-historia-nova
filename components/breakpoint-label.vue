@@ -65,7 +65,7 @@ export default {
   opacity: 1;
   transition: all .50s;
   position: absolute;
-  margin-left: 0rem;
+  width: 96rem
 }
 .igs-breakpoint-label-disable {
   opacity:0;

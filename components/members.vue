@@ -19,7 +19,7 @@ export default {
 .igs-member-2,
 .igs-member-3 {
   font-family: 'Gilroy', sans-serif;
-  color:rgba(0,0,0, .8);
+  color:#000;
   font-size: 3em;
   margin-top: 0.3em;
   transition: all .5s;

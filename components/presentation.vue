@@ -5,6 +5,7 @@
       appTitle
       appMembers
       appBreakpointLabel(:currentBreakpoint="currentBreakpoint")
+      appQuoteCardMentality
 </template>
 
 <script>
@@ -12,12 +13,14 @@ import appBackground from '@/components/background.vue'
 import appTitle from '@/components/presentation-title.vue'
 import appMembers from '@/components/members.vue'
 import appBreakpointLabel from '@/components/breakpoint-label.vue'
+import appQuoteCardMentality from '@/components/quote-card-mentality.vue'
 export default {
   components: {
     appBackground,
     appTitle,
     appBreakpointLabel,
-    appMembers
+    appMembers,
+    appQuoteCardMentality
   },
   props: {
     currentBreakpoint: {

@@ -27,7 +27,7 @@ export default {
     z-index: 1;
     transition: all .50s;
     display: block;
-    transform: translateX(-35vw);
+    transform: translateX(-35em);
 }
 .igs-background-cover-1{
     width: 40em;

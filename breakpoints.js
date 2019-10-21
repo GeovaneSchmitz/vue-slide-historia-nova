@@ -22,7 +22,7 @@ module.exports = [
   },
   {
     index: 4,
-    label: 'Temas',
+    label: 'Contexto',
     showLabel: true
   },
   {
@@ -34,6 +34,16 @@ module.exports = [
   {
     index: 6,
     label: 'Metodologia',
+    showLabel: true
+  },
+  {
+    index: 7,
+    label: 'Antipositivismo',
+    showLabel: true
+  },
+  {
+    index: 8,
+    label: 'História das Mentalidades',
     showLabel: true
   }
 ]
