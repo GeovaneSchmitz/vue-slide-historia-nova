@@ -22,14 +22,15 @@ module.exports = [
   },
   {
     index: 4,
-    label: 'Contexto',
-    showLabel: true
+    label: 'Capa',
+    showLabel: false,
+    autoplay: true,
+    timeout: 130
   },
   {
     index: 5,
     label: 'Propostas',
     showLabel: true
-
   },
   {
     index: 6,
