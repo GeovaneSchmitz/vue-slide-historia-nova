@@ -1,11 +1,11 @@
 <template lang="pug">
   .igs-breakpoint-topics(:class='{"igs-breakpoint-topic-disable": disable}')
-    .igs-breakpoint-topics-1(v-show='this.currentTopics !== 1')
+    .igs-breakpoint-topics-1(v-show='currentTopics === 1')
       .igs-breakpoint-topic(v-for='topic in topics1')
         .igs-breakpoint-topic-bullet
           |●
         .igs-breakpoint-topic-content(v-html='topic')
-    .igs-breakpoint-topics-2(v-show='this.currentTopics !== 2')
+    .igs-breakpoint-topics-2(v-show='currentTopics === 2')
       .igs-breakpoint-topic(v-for='topic in topics2')
         .igs-breakpoint-topic-bullet
           |●
@@ -46,10 +46,9 @@ export default {
           this.currentTopics = 2
           this.topics2 = breakpoint.topics
         } else {
-          this.currentLabel = 1
+          this.currentTopics = 1
           this.topics1 = breakpoint.topics
         }
-        this.$forceUpdate()
       } else {
         this.disable = true
       }
