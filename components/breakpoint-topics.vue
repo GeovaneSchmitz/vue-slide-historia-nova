@@ -49,6 +49,7 @@ export default {
           this.currentLabel = 1
           this.topics1 = breakpoint.topics
         }
+        this.$forceUpdate()
       } else {
         this.disable = true
       }
