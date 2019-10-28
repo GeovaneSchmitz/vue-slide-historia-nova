@@ -129,4 +129,9 @@ export default {
 .igs-toolbar-active{
   opacity: 1;
 }
+@media print {
+  .igs-toolbar-wrapper {
+    display: none;
+  }
+}
 </style>

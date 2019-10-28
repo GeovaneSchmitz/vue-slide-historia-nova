@@ -41,6 +41,7 @@ export default {
   color: #87101e;
   font-size: 6em;
   margin-bottom: 2em;
+  font-weight: 400;
 }
 .igs-title-wrapper {
   transition: all .50s;

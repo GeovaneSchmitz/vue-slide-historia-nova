@@ -12,6 +12,10 @@ export default {
     currentBreakpoint: {
       type: Object,
       required: true
+    },
+    enabledTransition: {
+      type: Boolean,
+      default: true
     }
   },
   data () {
@@ -24,16 +28,19 @@ export default {
     }
   },
   mounted () {
-    this.$root.$on('breakpoint-change', this.trasition)
+    if (this.enabledTransition) {
+      this.$root.$on('breakpoint-change', this.transition)
+    }
+    this.transition(this.currentBreakpoint)
   },
   methods: {
-    trasition (breakpoint) {
+    transition (breakpoint) {
       if (breakpoint.showLabel) {
         this.disable = false
-        if (this.currentLabel === 1) {
+        if (this.currentLabel === 1 && breakpoint.label !== this.label1) {
           this.currentLabel = 2
           this.label2 = breakpoint.label
-        } else {
+        } else if (breakpoint.label !== this.label2) {
           this.currentLabel = 1
           this.label1 = breakpoint.label
         }
@@ -51,24 +58,23 @@ export default {
   opacity:1;
   color: #87101e;
   display:block;
-  font-size: 12em;
   transition: all .50s;
   font-family: 'Merriweather', serif;
-  font-size: 5em;
-  left: 2em;
-  top:1em;
+  font-size: 3em;
   position: absolute;
+  font-weight: 400;
+  margin:1em 0 0 3.3333em;
 }
+
 .igs-breakpoint-label-1,
 .igs-breakpoint-label-2 {
   opacity: 1;
   transition: all .50s;
   position: absolute;
-  width: 96rem
+  width: 30em
 }
 .igs-breakpoint-label-disable {
   opacity:0;
-  margin-left: -1rem;
-
+  margin-left: -1em;
 }
 </style>

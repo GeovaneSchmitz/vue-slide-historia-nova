@@ -1,7 +1,7 @@
 <template lang='pug'>
   .igs-index
     toolbar(:currentBreakpoint="currentBreakpoint")
-    presentation(:currentBreakpoint="currentBreakpoint")
+    presentation(:printBreakpoints='printBreakpoints', :currentBreakpoint="currentBreakpoint")
 </template>
 
 <script>
@@ -20,6 +20,11 @@ export default {
       breakpointIndex: 0,
       currentBreakpoint: breakpoints[0]
     }
+  },
+  created () {
+    this.printBreakpoints = breakpoints.filter((breakpoint) => {
+      return !breakpoint.noPrint
+    })
   },
   mounted () {
     this.$root.$on('request-to-previous', this.toPrevious)
