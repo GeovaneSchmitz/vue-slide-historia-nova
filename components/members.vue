@@ -3,7 +3,7 @@
     .igs-member-1
       |Geovane Schmitz
     .igs-member-2
-      |Pamela de Oliveira
+      |Pamela Fialho
     .igs-member-3
       |Valter R. Junior
 </template>

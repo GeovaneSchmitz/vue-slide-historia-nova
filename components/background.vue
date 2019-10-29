@@ -96,14 +96,14 @@ export default {
 .igs-breakpoint-10 .igs-background-ribbon,
 .igs-breakpoint-11 .igs-background-ribbon{
     display: block;
-    width: 58em;
-    transform: rotate(10deg) translateY(-10em) translateX(-10em);
+    width: 60em;
+    transform: rotate(5deg) translateY(-10em) translateX(-10em);
 }
 
 .igs-breakpoint-8 .igs-background-ribbon-white,
 .igs-breakpoint-9 .igs-background-ribbon-white,
 .igs-breakpoint-10 .igs-background-ribbon-white {
-    width: 53em;
+    width: 55em;
 }
 .igs-breakpoint-2 .igs-background-ribbon-white,
 .igs-breakpoint-3 .igs-background-ribbon-white {

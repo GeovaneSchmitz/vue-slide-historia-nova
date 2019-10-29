@@ -17,7 +17,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Merriweather:400,300&display=swap' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Merriweather:300,400,300i,700&display=swap' }
     ]
   },
   /*

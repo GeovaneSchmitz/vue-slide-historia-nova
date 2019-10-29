@@ -40,7 +40,7 @@ export default {
         if (this.currentLabel === 1 && breakpoint.label !== this.label1) {
           this.currentLabel = 2
           this.label2 = breakpoint.label
-        } else if (breakpoint.label !== this.label2) {
+        } else if (breakpoint.label !== this.label2 && breakpoint.label !== this.label2) {
           this.currentLabel = 1
           this.label1 = breakpoint.label
         }

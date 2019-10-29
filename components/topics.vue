@@ -1,11 +1,11 @@
 <template lang="pug">
-  .igs-breakpoint-topics(:class='{"igs-breakpoint-topic-disable": disable}')
-    .igs-breakpoint-topics-1(v-show='currentTopics === 1')
+  .igs-breakpoint-topics(:class='{"igs-breakpoint-topics-disable": disable}')
+    .igs-breakpoint-topics-1(:class='{"igs-breakpoint-topic-disable": currentTopics !== 1}')
       .igs-breakpoint-topic(v-for='topic in topics1')
         .igs-breakpoint-topic-bullet
           |●
         .igs-breakpoint-topic-content(v-html='topic')
-    .igs-breakpoint-topics-2(v-show='currentTopics === 2')
+    .igs-breakpoint-topics-2(:class='{"igs-breakpoint-topic-disable": currentTopics !== 2}')
       .igs-breakpoint-topic(v-for='topic in topics2')
         .igs-breakpoint-topic-bullet
           |●
@@ -14,9 +14,11 @@
 <script>
 export default {
   props: {
-    currentBreakpoint: {
-      type: Object,
-      required: true
+    topics: {
+      type: Array,
+      default () {
+        return []
+      }
     },
     enabledTransition: {
       type: Boolean,
@@ -33,23 +35,26 @@ export default {
     }
   },
   mounted () {
-    if (this.enabledTransition) {
-      this.$root.$on('breakpoint-change', this.transition)
-    }
-    this.transition(this.currentBreakpoint)
+    this.transition(this.topics)
   },
   methods: {
-    transition (breakpoint) {
-      if (breakpoint.topics) {
+    topicsChange () {
+      return function (topics) {
+        this.transition(topics)
+      }.bind(this)
+    },
+    transition (topics) {
+      if (topics) {
         this.disable = false
         if (this.currentTopics === 1) {
           this.currentTopics = 2
-          this.topics2 = breakpoint.topics
+          this.topics2 = topics
         } else {
           this.currentTopics = 1
-          this.topics1 = breakpoint.topics
+          this.topics1 = topics
         }
       } else {
+        this.currentTopics = 0
         this.disable = true
       }
     }
@@ -66,12 +71,9 @@ export default {
   transition: all .50s;
   font-family: 'Merriweather', serif;
   position: absolute;
-  margin:10em 0 0 10em;
-  width: 85em;
   height: 41.25em;
   display: flex;
   justify-items: center;
-  align-items: center;
 }
 .igs-breakpoint-topic {
   margin-bottom: 0.5em;
@@ -86,7 +88,6 @@ export default {
   font-size: 1.5em;
 }
 .igs-breakpoint-topic-content {
-  text-align: justify;
   line-height: 1.5;
 }
 .igs-breakpoint-topics-1,
@@ -94,11 +95,16 @@ export default {
   opacity: 1;
   position: absolute;
   transition: all .50s;
-  width: 85em;
+  width: 100%;
+  margin-left: 0%;
+
 }
 .igs-breakpoint-topic-disable {
   opacity:0;
-  margin-left: -1em;
-
+  width: 100%;
+  margin-left: 10%;
+}
+.igs-breakpoint-topics-disable {
+  opacity:0;
 }
 </style>

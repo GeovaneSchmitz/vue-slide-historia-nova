@@ -4,17 +4,17 @@
       appBackground
       appTitle
       appMembers
-      appComparisonHistory
+      appComparisonHistory(:currentBreakpoint="currentBreakpoint")
       appBreakpointLabel(:currentBreakpoint="currentBreakpoint")
-      appBreakpointTopics(:currentBreakpoint="currentBreakpoint")
+      appTopics.igs-presentation-topics(ref='topics', :topics="currentBreakpoint.topics")
       appQuoteCardMentality
     .igs-presentation.igs-presentation-print(v-for="breakpoint in printBreakpoints", :class="`igs-breakpoint-${breakpoint.index}`")
       appBackground
       appTitle
       appMembers
-      appComparisonHistory
+      appComparisonHistory(:currentBreakpoint="currentBreakpoint")
       appBreakpointLabel(:currentBreakpoint="breakpoint", :enabledTransition="false")
-      appBreakpointTopics(:currentBreakpoint="breakpoint", :enabledTransition="false")
+      appTopics.igs-presentation-topics(:topics="breakpoint.topics")
       appQuoteCardMentality
 </template>
 
@@ -23,7 +23,7 @@ import appBackground from '@/components/background.vue'
 import appTitle from '@/components/presentation-title.vue'
 import appMembers from '@/components/members.vue'
 import appBreakpointLabel from '@/components/breakpoint-label.vue'
-import appBreakpointTopics from '@/components/breakpoint-topics.vue'
+import appTopics from '@/components/topics.vue'
 import appComparisonHistory from '@/components/comparison-history.vue'
 import appQuoteCardMentality from '@/components/quote-card-mentality.vue'
 export default {
@@ -31,7 +31,7 @@ export default {
     appBackground,
     appTitle,
     appBreakpointLabel,
-    appBreakpointTopics,
+    appTopics,
     appMembers,
     appComparisonHistory,
     appQuoteCardMentality
@@ -59,6 +59,9 @@ export default {
     }
   },
   mounted () {
+    this.$root.$on('breakpoint-change', (breakpoint) => {
+      this.$refs.topics.topicsChange()(breakpoint.topics)
+    })
   },
   methods: {
   }
@@ -66,7 +69,12 @@ export default {
 </script>
 
 <style>
-
+.igs-presentation-topics{
+  margin:10em 0 0 10em;
+  width: 85em;
+  align-items: center;
+  text-align: justify;
+}
 .igs-presentation {
   z-index: 0;
   user-select: none;
