@@ -13,7 +13,6 @@ export default {
 
 <style>
 .igs-background {
-    background: #fff;
     position: absolute;
     width: 100em;
     height: 56.25em;
@@ -90,7 +89,10 @@ export default {
     display: block;
     transform: rotate(-15deg) translateY(-10em) translateX(-4em);
 }
-
+.igs-breakpoint-7 .igs-background,
+.igs-breakpoint-8 .igs-background {
+    z-index: 10;
+}
 .igs-breakpoint-8 .igs-background-ribbon,
 .igs-breakpoint-9 .igs-background-ribbon,
 .igs-breakpoint-10 .igs-background-ribbon,

@@ -43,14 +43,17 @@ module.exports = [
     showLabel: true,
     number: 2,
     topics: [
-      '<i>La nouvelle histoire</i> - título de uma coleção de ' +
-      'ensaios editada pelo francês Jacques Le Goff;',
-      'Caracterizada como história total (<i>histoire totale</i>) ou história estrutural;',
+      '<i>La nouvelle histoire</i> - título de uma coleção de en' +
+      'saios editada pelo francês Jacques Le Goff;',
+      'Caracterizada como história total (<i>histoire totale</i>' +
+      ') ou história estrutural;',
       'O movimento está unido apenas naquilo a que se opõe;',
-      'Analogia com os teólogos medievais, diante do problema ' +
-      'de definir Deus, e optar por uma <i>via negativa</i>: definir ' +
-      'em termos do que ela não é, daquilo a que se opõem seus estudiosos;',
-      'O contraste entre a antiga e a nova história pode ser resumido em seis pontos.'
+      'Analogia com os teólogos medievais, diante do problema de' +
+      ' definir Deus, e optar por uma <i>via negativa</i>: defin' +
+      'ir em termos do que ela não é, daquilo a que se opõem seu' +
+      's estudiosos;',
+      'O contraste entre a antiga e a nova história pode ser res' +
+      'umido em seis pontos.'
     ]
   },
   {
@@ -61,6 +64,14 @@ module.exports = [
   },
   {
     index: 8,
+    label: 'O que é Nova História?',
+    showLabel: false,
+    autoplay: true,
+    timeout: 400,
+    noPrint: true
+  },
+  {
+    index: 9,
     label: 'O que é Nova História?',
     showLabel: false,
     number: 4,
@@ -244,13 +255,13 @@ module.exports = [
     label: 'Referências',
     showLabel: true,
     topics: [
-      'BURKE, Peter. A Nova História, seu Passado ' +
-      'e seu Futuro. In: BURKE, Peter. <b>A escrita da História</b>: ' +
-      'novas perspectivas. São Paulo: Editora Unesp, 1992. p. 1-13.',
+      'BURKE, Peter. A Nova História, seu Passado e seu Futuro. In:' +
+      ' BURKE, Peter. <b>A escrita da História</b>: novas perspecti' +
+      'vas. São Paulo: Editora Unesp, 1992. p. 1-13.',
       'FUNARI, Pedro Paulo Abreu; SILVA, Glaydson José da. História' +
-      'Nova e Outras Historiografias. In: FUNARI, Pedro Paulo Abreu; ' +
-      'SILVA, Glaydson José da. <b>Teoria da História.</b> São Paulo: Editora ' +
-      'Brasiliense, 2008. Cap. 6. p. 69-80.'
+      'Nova e Outras Historiografias. In: FUNARI, Pedro Paulo Abreu' +
+      '; SILVA, Glaydson José da. <b>Teoria da História.</b> São Pa' +
+      'ulo: Editora Brasiliense, 2008. Cap. 6. p. 69-80.'
     ]
   }
 

@@ -62,7 +62,6 @@ export default {
   align-items: center;
 }
 
-.igs-breakpoint-7 .igs-comparison-history,
 .igs-breakpoint-8 .igs-comparison-history,
 .igs-breakpoint-9 .igs-comparison-history,
 .igs-breakpoint-10 .igs-comparison-history,
@@ -70,7 +69,6 @@ export default {
   display: flex;
   opacity: 0;
 }
-.igs-breakpoint-8 .igs-comparison-history,
 .igs-breakpoint-9 .igs-comparison-history,
 .igs-breakpoint-10 .igs-comparison-history{
   opacity: 1;
@@ -81,18 +79,17 @@ export default {
 .igs-breakpoint-10 .igs-comparison-history-old-history{
   margin-left:0em;
 }
-.igs-breakpoint-8 .igs-comparison-history-new-history,
 .igs-breakpoint-9 .igs-comparison-history-new-history,
 .igs-breakpoint-10 .igs-comparison-history-new-history{
   margin-right:0em;
 }
-.igs-breakpoint-7 .igs-comparison-history-old-history,
+.igs-breakpoint-8 .igs-comparison-history-old-history,
 .igs-breakpoint-11 .igs-comparison-history-old-history{
-  margin-left:-5em;
+  margin-left:-3em;
 }
-.igs-breakpoint-7 .igs-comparison-history-new-history,
+.igs-breakpoint-8 .igs-comparison-history-new-history,
 .igs-breakpoint-11 .igs-comparison-history-new-history{
-  margin-right:5em;
+  margin-right:3em;
 }
 .igs-comparison-history-old-history,
 .igs-comparison-history-new-history {

@@ -1,5 +1,5 @@
 <template lang="pug">
-  .igs-breakpoint-number(:class='{"igs-breakpoint-number-disable": disable}')
+  .igs-breakpoint-number(:class='{"igs-breakpoint-numbers-disable": disable}')
     .igs-breakpoint-number-1(:class='{"igs-breakpoint-number-disable": this.currentNumber !== 1}')
       |{{number1}}
     .igs-breakpoint-number-2(:class='{"igs-breakpoint-number-disable": this.currentNumber !== 2}')
@@ -74,6 +74,9 @@ export default {
 }
 .igs-breakpoint-number-disable {
   opacity:0;
-  margin-left: -1em;
+  margin:0 0 0 2em;
+}
+.igs-breakpoint-numbers-disable {
+  opacity:0;
 }
 </style>
