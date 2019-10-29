@@ -20,13 +20,19 @@ export default {
     currentBreakpoint: {
       type: Object,
       required: true
+    },
+    enabledTransition: {
+      type: Boolean,
+      default: true
     }
   },
   mounted () {
-    this.$root.$on('breakpoint-change', (breakpoint) => {
-      this.$refs.topicsOldHistory.topicsChange()(breakpoint.topicsOldHistory)
-      this.$refs.topicsNewHistory.topicsChange()(breakpoint.topicsNewHistory)
-    })
+    if (this.enabledTransition) {
+      this.$root.$on('breakpoint-change', (breakpoint) => {
+        this.$refs.topicsOldHistory.topicsChange()(breakpoint.topicsOldHistory)
+        this.$refs.topicsNewHistory.topicsChange()(breakpoint.topicsNewHistory)
+      })
+    }
   }
 }
 </script>
@@ -53,7 +59,7 @@ export default {
   height: calc(100% - 10em);
   margin-top: 10em;
   text-align: justify;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .igs-breakpoint-7 .igs-comparison-history,

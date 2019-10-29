@@ -6,14 +6,16 @@
       appMembers
       appComparisonHistory(:currentBreakpoint="currentBreakpoint")
       appBreakpointLabel(:currentBreakpoint="currentBreakpoint")
+      appBreakpointNumber(:currentBreakpoint="currentBreakpoint")
       appTopics.igs-presentation-topics(ref='topics', :topics="currentBreakpoint.topics")
       appQuoteCardMentality
     .igs-presentation.igs-presentation-print(v-for="breakpoint in printBreakpoints", :class="`igs-breakpoint-${breakpoint.index}`")
       appBackground
       appTitle
       appMembers
-      appComparisonHistory(:currentBreakpoint="currentBreakpoint")
+      appComparisonHistory(:currentBreakpoint="breakpoint", :enabledTransition="false")
       appBreakpointLabel(:currentBreakpoint="breakpoint", :enabledTransition="false")
+      appBreakpointNumber(:currentBreakpoint="breakpoint", :enabledTransition="false")
       appTopics.igs-presentation-topics(:topics="breakpoint.topics")
       appQuoteCardMentality
 </template>
@@ -23,6 +25,7 @@ import appBackground from '@/components/background.vue'
 import appTitle from '@/components/presentation-title.vue'
 import appMembers from '@/components/members.vue'
 import appBreakpointLabel from '@/components/breakpoint-label.vue'
+import appBreakpointNumber from '@/components/breakpoint-number.vue'
 import appTopics from '@/components/topics.vue'
 import appComparisonHistory from '@/components/comparison-history.vue'
 import appQuoteCardMentality from '@/components/quote-card-mentality.vue'
@@ -34,7 +37,8 @@ export default {
     appTopics,
     appMembers,
     appComparisonHistory,
-    appQuoteCardMentality
+    appQuoteCardMentality,
+    appBreakpointNumber
   },
   props: {
     currentBreakpoint: {

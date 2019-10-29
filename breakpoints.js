@@ -34,12 +34,14 @@ module.exports = [
   {
     index: 5,
     label: 'Contexto Histórico',
-    showLabel: true
+    showLabel: true,
+    number: 1
   },
   {
     index: 6,
     label: 'O que é Nova História?',
     showLabel: true,
+    number: 2,
     topics: [
       '<i>La nouvelle histoire</i> - título de uma coleção de ' +
       'ensaios editada pelo francês Jacques Le Goff;',
@@ -54,12 +56,14 @@ module.exports = [
   {
     index: 7,
     label: 'O que é Nova História?',
-    showLabel: true
+    showLabel: true,
+    number: 3
   },
   {
     index: 8,
     label: 'O que é Nova História?',
     showLabel: false,
+    number: 4,
     topicsOldHistory: [
       'História diz respeito à política, e deve estar relacionad' +
       'a ao Estado;',
@@ -87,6 +91,7 @@ module.exports = [
     index: 9,
     label: 'O que é Nova História?',
     showLabel: false,
+    number: 5,
     topicsOldHistory: [
       'Historiadores tradicionais pensam na história como essenc' +
       'ialmente uma narrativa dos acontecimentos.'
@@ -100,6 +105,7 @@ module.exports = [
     index: 10,
     label: 'O que é Nova História?',
     showLabel: false,
+    number: 6,
     topicsOldHistory: [
       'Oferece uma visão de cima, foca nos grandes feitos dos gr' +
       'andes homens, estadistas, generais ou ocasionalmente ecle' +
@@ -122,6 +128,7 @@ module.exports = [
     index: 10,
     label: 'O que é Nova História?',
     showLabel: false,
+    number: 7,
     topicsOldHistory: [
       'História deveria ser baseada em documentos;',
       'Uma das grandes contribuições de Rank foi o estudo sobre ' +
@@ -142,6 +149,7 @@ module.exports = [
     index: 10,
     label: 'O que é Nova História?',
     showLabel: false,
+    number: 8,
     topicsOldHistory: [
       '“Quando um historiador pergunta ‘Por que Brutus apunhalou' +
       ' César?’ ele quer dizer ‘O que Brutus pensou, o que fez c' +
@@ -152,17 +160,17 @@ module.exports = [
       'm os acontecimentos.'
     ],
     topicsNewHistory: [
-      'Expôs as limitações dos registros que são preservados exc' +
-      'lusivamente em arquivos;',
-      'Como os historiadores estão mais preocupados com a varied' +
-      'ade de atividades humanas, devem analisar uma maior varie' +
-      'dade de evidências (visuais, orais, etc).'
+      'Discorda do modelo de explicação de Collingwood;',
+      'Os preços se elevaram na Espanha no século dezesseis, e o' +
+      's historiadores econômicos não chegaram à uma mesma respo' +
+      'sta, mas aceitaram suas várias respostas.'
     ]
   },
   {
     index: 10,
     label: 'O que é Nova História?',
     showLabel: false,
+    number: 9,
     topicsOldHistory: [
       'A História é objetiva;',
       'A tarefa do historiador é apresentar aos leitores os fato' +
@@ -190,41 +198,49 @@ module.exports = [
   },
   {
     index: 12,
+    number: 10,
     label: 'Quanto é nova a nova história?',
     showLabel: true
   },
   {
     index: 13,
+    number: 11,
     label: 'Os prós e os contras da mudança',
     showLabel: true
   },
   {
     index: 14,
+    number: 12,
     label: 'Problemas de definição',
     showLabel: true
   },
   {
     index: 15,
+    number: 13,
     label: 'Problemas das fontes',
     showLabel: true
   },
   {
     index: 16,
+    number: 14,
     label: 'Problemas de explicação',
     showLabel: true
   },
   {
     index: 17,
+    number: 15,
     label: 'Problemas de síntese',
     showLabel: true
   },
   {
     index: 18,
+    number: 16,
     label: 'História como processo de conhecimento subjetivo',
     showLabel: true
   },
   {
     index: 19,
+    number: 17,
     label: 'Referências',
     showLabel: true,
     topics: [
