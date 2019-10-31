@@ -6,6 +6,8 @@
       appMembers
       appComparisonHistory(:currentBreakpoint="currentBreakpoint")
       appBreakpointLabel(:currentBreakpoint="currentBreakpoint")
+      appPhotoHarvey(:currentBreakpoint="currentBreakpoint")
+      appPhotoFruin(:currentBreakpoint="currentBreakpoint")
       appBreakpointNumber(:currentBreakpoint="currentBreakpoint")
       appTopics.igs-presentation-topics(ref='topics', :topics="currentBreakpoint.topics")
       appQuoteCardMentality
@@ -15,6 +17,8 @@
       appMembers
       appComparisonHistory(:currentBreakpoint="breakpoint", :enabledTransition="false")
       appBreakpointLabel(:currentBreakpoint="breakpoint", :enabledTransition="false")
+      appPhotoHarvey(:currentBreakpoint="breakpoint", :enabledTransition="false")
+      appPhotoFruin(:currentBreakpoint="breakpoint", :enabledTransition="false")
       appBreakpointNumber(:currentBreakpoint="breakpoint", :enabledTransition="false")
       appTopics.igs-presentation-topics(:topics="breakpoint.topics")
       appQuoteCardMentality
@@ -25,6 +29,8 @@ import appBackground from '@/components/background.vue'
 import appTitle from '@/components/presentation-title.vue'
 import appMembers from '@/components/members.vue'
 import appBreakpointLabel from '@/components/breakpoint-label.vue'
+import appPhotoHarvey from '@/components/photo-james-harvey.vue'
+import appPhotoFruin from '@/components/photo-robert-fruin.vue'
 import appBreakpointNumber from '@/components/breakpoint-number.vue'
 import appTopics from '@/components/topics.vue'
 import appComparisonHistory from '@/components/comparison-history.vue'
@@ -36,6 +42,8 @@ export default {
     appBreakpointLabel,
     appTopics,
     appMembers,
+    appPhotoHarvey,
+    appPhotoFruin,
     appComparisonHistory,
     appQuoteCardMentality,
     appBreakpointNumber
@@ -77,6 +85,7 @@ export default {
   margin:10em 0 0 10em;
   width: 85em;
   align-items: center;
+  position: absolute;
   text-align: justify;
 }
 .igs-presentation {

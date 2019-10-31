@@ -70,7 +70,6 @@ export default {
   display:block;
   transition: all .50s;
   font-family: 'Merriweather', serif;
-  position: absolute;
   height: 41.25em;
   display: flex;
   justify-items: center;
@@ -93,15 +92,14 @@ export default {
 .igs-breakpoint-topics-1,
 .igs-breakpoint-topics-2 {
   opacity: 1;
+  width: 100%;
   position: absolute;
   transition: all .50s;
-  width: 100%;
   margin-left: 0%;
 
 }
 .igs-breakpoint-topic-disable {
   opacity:0;
-  width: 100%;
   margin-left: 10%;
 }
 .igs-breakpoint-topics-disable {

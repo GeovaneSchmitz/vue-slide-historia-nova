@@ -32,10 +32,25 @@ export default [
     noPrint: true
   },
   {
-    index: 5,
+    index: 50,
     label: 'Contexto Histórico',
     showLabel: true,
-    number: 1
+    autoplay: true,
+    noPrint: true,
+    timeout: 130,
+    number: 10
+  },
+  {
+    index: 60,
+    label: 'Contexto Histórico',
+    showLabel: true,
+    number: 1,
+    topicsPhoto: [
+      'Algeria',
+      'Imigração e Enoch Powell',
+      'Mudanças Escolares (França)',
+      'Estagflação'
+    ]
   },
   {
     index: 6,
@@ -205,7 +220,8 @@ export default [
     showLabel: false,
     autoplay: true,
     noPrint: true,
-    timeout: 130
+    timeout: 130,
+    number: 10
   },
   {
     index: 12,
@@ -224,8 +240,8 @@ export default [
     ]
   },
   {
-    index: 12,
-    number: 10,
+    index: 13,
+    number: 11,
     label: 'Quanto é nova a nova história?',
     showLabel: true,
     topics: [
@@ -236,12 +252,21 @@ export default [
     ]
   },
   {
-    index: 12,
-    number: 10,
+    index: 14,
     label: 'Termo “Nova História”',
     showLabel: true,
-    topics: [
-      'O primeiro uso da expressão em 1912 por James Harvey Robin' +
+    autoplay: true,
+    noPrint: true,
+    number: 12,
+    timeout: 500
+  },
+  {
+    index: 15,
+    number: 12,
+    label: 'Termo “Nova História”',
+    showLabel: true,
+    topicsPhoto: [
+      'O primeiro uso da expressão em 1912 por James Harvey Robinson' +
       'son.',
       '<i>“História Inclui todo traço e vestígio de tudo o que o hom' +
       'em fez ou pensou desde seu primeiro aparecimento sobre a t' +
@@ -252,52 +277,137 @@ export default [
     ]
   },
   {
-    index: 12,
-    number: 10,
+    index: 16,
     label: 'Termo “Nova História”',
     showLabel: true,
-    topics: [
+    autoplay: true,
+    noPrint: true,
+    number: 12,
+    timeout: 500
+  },
+  {
+    index: 17,
+    number: 13,
+    label: 'Termo “Nova História”',
+    showLabel: true,
+    topicsPhoto: [
       'Em 1867, o grande historiador holandês Robert Fruin public' +
       'ou um ensaio chamado “A Nova Historiografia”, uma defesa d' +
       'a história científica, rankeana'
     ]
   },
   {
-    index: 13,
-    number: 11,
-    label: 'Os prós e os contras da mudança',
-    showLabel: true
+    index: 70,
+    label: 'Prós e os contras da mudança',
+    showLabel: true,
+    autoplay: true,
+    noPrint: true,
+    timeout: 130,
+    number: 10
   },
   {
-    index: 14,
-    number: 12,
-    label: 'Problemas de definição',
-    showLabel: true
-  },
-  {
-    index: 15,
-    number: 13,
-    label: 'Problemas das fontes',
-    showLabel: true
-  },
-  {
-    index: 16,
+    index: 80,
     number: 14,
-    label: 'Problemas de explicação',
-    showLabel: true
+    label: 'Prós e os contras da mudança',
+    showLabel: true,
+    topicsPhoto: [
+      'Dois lados',
+      'Feminismo, independência e ecologia',
+      'Crise do paradigma',
+      'Definição, explicação, fontes'
+    ]
   },
   {
-    index: 17,
+    index: 90,
+    label: 'Problemas de definição',
+    showLabel: true,
+    autoplay: true,
+    noPrint: true,
+    timeout: 130,
+    number: 10
+  },
+  {
+    index: 100,
     number: 15,
-    label: 'Problemas de síntese',
-    showLabel: true
+    label: 'Problemas de definição',
+    showLabel: true,
+    topicsPhoto: [
+      'Território desconhecido',
+      'Imagem negativa',
+      'Ocidente x Oriente',
+      'Problemas de definições',
+      'O quão baixo para ser história;',
+      'Cotidiano'
+    ]
   },
   {
-    index: 18,
-    number: 16,
+    index: 110,
+    label: 'Problemas das fontes',
+    showLabel: true,
+    autoplay: true,
+    noPrint: true,
+    timeout: 130,
+    number: 10
+  },
+  {
+    index: 120,
+    number: 17,
+    label: 'Problemas das fontes',
+    showLabel: true,
+    topicsPhoto: [
+      'Explicação estrutural',
+      'Individual ou grupo',
+      'Hitler como exemplo'
+    ]
+  },
+  {
+    index: 130,
+    label: 'Problemas de explicação',
+    showLabel: true,
+    autoplay: true,
+    noPrint: true,
+    timeout: 130,
+    number: 10
+  },
+  {
+    index: 140,
+    label: 'Problemas de explicação',
+    showLabel: true,
+    number: 10,
+    topicsPhoto: [
+      'Explicação estrutural',
+      'Individual ou grupo',
+      'Hitler como exemplo'
+    ]
+  },
+  {
+    index: 150,
+    label: 'Problemas de síntese',
+    showLabel: true,
+    autoplay: true,
+    noPrint: true,
+    timeout: 130,
+    number: 10
+  },
+  {
+    index: 160,
+    number: 18,
+    label: 'Problemas de síntese',
+    showLabel: true,
+    topicsPhoto: [
+      'História dividida',
+      'Subdisciplinas',
+      'Busca pelo centro',
+      'História total'
+    ]
+  },
+  {
+    index: 23,
+    number: 19,
     label: 'História como processo de conhecimento subjetivo',
     showLabel: true,
     topics: [
+      'Antipositivismo',
       'Não pode haver conhecimento sem um sujeito de conheciment' +
       'o.',
       'Sempre tem um ponto de vista, que  impede que se chegue a' +
@@ -307,8 +417,8 @@ export default [
     ]
   },
   {
-    index: 18,
-    number: 16,
+    index: 24,
+    number: 20,
     label: 'História como processo de conhecimento subjetivo',
     showLabel: true,
     topics: [
@@ -320,8 +430,8 @@ export default [
     ]
   },
   {
-    index: 19,
-    number: 17,
+    index: 25,
+    number: 21,
     label: 'Referências',
     showLabel: true,
     topics: [

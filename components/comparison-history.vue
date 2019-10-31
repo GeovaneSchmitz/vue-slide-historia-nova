@@ -59,6 +59,7 @@ export default {
   height: calc(100% - 10em);
   margin-top: 10em;
   text-align: justify;
+  position: absolute;
   align-items: center;
 }
 
