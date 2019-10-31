@@ -1,4 +1,4 @@
-module.exports = [
+export default [
   {
     index: 0,
     label: 'Início',
@@ -210,8 +210,57 @@ module.exports = [
   {
     index: 12,
     number: 10,
+    label: 'Precursores',
+    showLabel: true,
+    topics: [
+      'Grã-Bretanha dos anos 30, Lewis Namier e R.H. Tawney rejei' +
+      'taram ambos a narrativa dos acontecimentos para alguns tip' +
+      'os de história estrutural.',
+      'Alemanha,  por volta de 1900, Karl Lamprecht',
+      'Em 1860, o estudioso suíço Jacob Burckhardt publicou um es' +
+      'tudo, The Civilization of the Renaissance in Italy, concen' +
+      'trado na história cultural e descrevendo mais as tendência' +
+      's do que narrando os acontecimentos.'
+    ]
+  },
+  {
+    index: 12,
+    number: 10,
     label: 'Quanto é nova a nova história?',
-    showLabel: true
+    showLabel: true,
+    topics: [
+      'Nos anos 70 e 80',
+      'Lucien Febvre e a Marc Bloch, que fundaram a revista Annal' +
+      'es em 1929.',
+      'Fernand Braudel, na geração seguinte.'
+    ]
+  },
+  {
+    index: 12,
+    number: 10,
+    label: 'Termo “Nova História”',
+    showLabel: true,
+    topics: [
+      'O primeiro uso da expressão em 1912 por James Harvey Robin' +
+      'son.',
+      '<i>“História Inclui todo traço e vestígio de tudo o que o hom' +
+      'em fez ou pensou desde seu primeiro aparecimento sobre a t' +
+      'erra”</i>',
+      '<i>“A Nova História vai servir-se de todas aquelas descoberta' +
+      's que estão sendo feitas sobre a humanidade pelos antropól' +
+      'ogos, economistas, psicólogos e sociólogos”</i>'
+    ]
+  },
+  {
+    index: 12,
+    number: 10,
+    label: 'Termo “Nova História”',
+    showLabel: true,
+    topics: [
+      'Em 1867, o grande historiador holandês Robert Fruin public' +
+      'ou um ensaio chamado “A Nova Historiografia”, uma defesa d' +
+      'a história científica, rankeana'
+    ]
   },
   {
     index: 13,
@@ -247,7 +296,28 @@ module.exports = [
     index: 18,
     number: 16,
     label: 'História como processo de conhecimento subjetivo',
-    showLabel: true
+    showLabel: true,
+    topics: [
+      'Não pode haver conhecimento sem um sujeito de conheciment' +
+      'o.',
+      'Sempre tem um ponto de vista, que  impede que se chegue a' +
+      'o “que realmente aconteceu” sem referência ao sujeito.',
+      '“A linguagem é o único pressuposto na Hermenêutica, pois ' +
+      'não há pensamento sem palavras”.'
+    ]
+  },
+  {
+    index: 18,
+    number: 16,
+    label: 'História como processo de conhecimento subjetivo',
+    showLabel: true,
+    topics: [
+      'Benedetto Croce (1866-1952), o passado só existe hoje, na' +
+      ' mente do observador, usando os parâmetros, as palavras e' +
+      ' Os valores de nossa época.',
+      'Walter Benjamin (1892-1940), reconhece que toda interpret' +
+      'ação se passa no presente.'
+    ]
   },
   {
     index: 19,
