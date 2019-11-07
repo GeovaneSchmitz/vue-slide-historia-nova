@@ -6,8 +6,15 @@
       appMembers
       appComparisonHistory(:currentBreakpoint="currentBreakpoint")
       appBreakpointLabel(:currentBreakpoint="currentBreakpoint")
+      appPhotoProsAndCons(:currentBreakpoint="currentBreakpoint")
       appPhotoHarvey(:currentBreakpoint="currentBreakpoint")
       appPhotoFruin(:currentBreakpoint="currentBreakpoint")
+      appPhotoContext(:currentBreakpoint="currentBreakpoint")
+      appPhotoNewHistory(:currentBreakpoint="currentBreakpoint")
+      appPhotoExplication(:currentBreakpoint="currentBreakpoint")
+      appPhotoSynthesis(:currentBreakpoint="currentBreakpoint")
+      appPhotoDefinition(:currentBreakpoint="currentBreakpoint")
+      appPhotoSource(:currentBreakpoint="currentBreakpoint")
       appBreakpointNumber(:currentBreakpoint="currentBreakpoint")
       appTopics.igs-presentation-topics(ref='topics', :topics="currentBreakpoint.topics")
       appQuoteCardMentality
@@ -19,6 +26,13 @@
       appBreakpointLabel(:currentBreakpoint="breakpoint", :enabledTransition="false")
       appPhotoHarvey(:currentBreakpoint="breakpoint", :enabledTransition="false")
       appPhotoFruin(:currentBreakpoint="breakpoint", :enabledTransition="false")
+      appPhotoContext(:currentBreakpoint="breakpoint", :enabledTransition="false")
+      appPhotoProsAndCons(:currentBreakpoint="breakpoint", :enabledTransition="false")
+      appPhotoExplication(:currentBreakpoint="breakpoint", :enabledTransition="false")
+      appPhotoSynthesis(:currentBreakpoint="breakpoint", :enabledTransition="false")
+      appPhotoNewHistory(:currentBreakpoint="breakpoint", :enabledTransition="false")
+      appPhotoDefinition(:currentBreakpoint="breakpoint", :enabledTransition="false")
+      appPhotoSource(:currentBreakpoint="breakpoint", :enabledTransition="false")
       appBreakpointNumber(:currentBreakpoint="breakpoint", :enabledTransition="false")
       appTopics.igs-presentation-topics(:topics="breakpoint.topics")
       appQuoteCardMentality
@@ -30,7 +44,14 @@ import appTitle from '@/components/presentation-title.vue'
 import appMembers from '@/components/members.vue'
 import appBreakpointLabel from '@/components/breakpoint-label.vue'
 import appPhotoHarvey from '@/components/photo-james-harvey.vue'
+import appPhotoContext from '@/components/photo-context.vue'
 import appPhotoFruin from '@/components/photo-robert-fruin.vue'
+import appPhotoSource from '@/components/photo-source.vue'
+import appPhotoSynthesis from '@/components/photo-synthesis.vue'
+import appPhotoExplication from '@/components/photo-explication.vue'
+import appPhotoNewHistory from '@/components/photo-new-history.vue'
+import appPhotoProsAndCons from '@/components/photo-pros-and-cons.vue'
+import appPhotoDefinition from '@/components/photo-definition.vue'
 import appBreakpointNumber from '@/components/breakpoint-number.vue'
 import appTopics from '@/components/topics.vue'
 import appComparisonHistory from '@/components/comparison-history.vue'
@@ -42,7 +63,14 @@ export default {
     appBreakpointLabel,
     appTopics,
     appMembers,
+    appPhotoDefinition,
     appPhotoHarvey,
+    appPhotoContext,
+    appPhotoExplication,
+    appPhotoNewHistory,
+    appPhotoSynthesis,
+    appPhotoSource,
+    appPhotoProsAndCons,
     appPhotoFruin,
     appComparisonHistory,
     appQuoteCardMentality,
@@ -91,7 +119,7 @@ export default {
 .igs-presentation {
   z-index: 0;
   user-select: none;
-  background-color: #fff;
+  background-color: #fffcdf;
   overflow: hidden;
   display:none;
 }

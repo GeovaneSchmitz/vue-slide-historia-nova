@@ -1,11 +1,9 @@
 <template lang="pug">
 .igs-photo-wrapper
-  .igs-photo
-    .igs-photo-img
-    .igs-photo-label
-      |Robert Fruin (1823 - 1899)
   .igs-photo-topics-wrapper
     appTopics.igs-photo-topics(:topics="currentBreakpoint.topicsPhoto", ref='topics')
+  .igs-photo
+    .igs-photo-img
 </template>
 
 <script>
@@ -39,58 +37,61 @@ export default {
 .igs-photo-wrapper{
   width: 85em;
   height:42.25em;
+  overflow: hidden;
   margin:10em 0 0 10em;
   position: absolute;
   font-family: 'Merriweather', serif;
   display: none;
   transition: .25s all;
+  opacity: 0;
   justify-content: space-around;
   flex-direction: row;
   align-items: center;
 }
-.igs-breakpoint-15 .igs-photo-wrapper,
-.igs-breakpoint-16 .igs-photo-wrapper,
-.igs-breakpoint-17 .igs-photo-wrapper,
-.igs-breakpoint-70 .igs-photo-wrapper{
+.igs-breakpoint-80 .igs-photo-wrapper,
+.igs-breakpoint-90 .igs-photo-wrapper,
+.igs-breakpoint-100 .igs-photo-wrapper,
+.igs-breakpoint-110 .igs-photo-wrapper{
   display:flex;
 }
-.igs-breakpoint-15 .igs-photo-wrapper,
-.igs-breakpoint-70 .igs-photo-wrapper{
-  opacity: 0;
+.igs-breakpoint-90 .igs-photo-wrapper,
+.igs-breakpoint-100 .igs-photo-wrapper{
+  opacity: 1;
 }
 .igs-photo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  opacity:0;
+  opacity: 0;
   transition: .5s all;
-  margin-left:7em;
+  margin-right:-7em;
 }
 .igs-photo-label {
   font-size: 1.5em;
   font-weight: 400;
-  margin-top: 1em;
+  margin-top:1em;
 }
 .igs-photo-img{
-  width: 22.5em;
-  height: 30em;
-  background-image: url('../assets/Robert_Fruin.gif');
+  width: 42em;
+  height: 27.82em;
+  background-image: url('../assets/definicao.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
+  margin:1em;
+  box-shadow: 0 .21875em .875em 0 rgba(47, 64, 176, 0.3);
   background-position: center;
   border-radius: 0.7em;
-  box-shadow: 0 .21875em .875em 0 rgba(47, 64, 176, 0.3);
 }
-.igs-breakpoint-16 .igs-photo,
-.igs-breakpoint-17 .igs-photo,
-.igs-breakpoint-70 .igs-photo{
+.igs-breakpoint-90 .igs-photo,
+.igs-breakpoint-100 .igs-photo{
   opacity: 1;
-  margin: 0;
+  margin:0;
 }
 .igs-photo-topics-wrapper{
   width: 50em;
   height:42.25em;
 }
-.igs-breakpoint-70 .igs-photo-topics{
+.igs-breakpoint-80 .igs-photo-topics{
   opacity: 0;
 }
 .igs-photo-topics{

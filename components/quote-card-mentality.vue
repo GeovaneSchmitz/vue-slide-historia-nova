@@ -40,6 +40,7 @@ export default {
     font-size: 2.5em;
     width: 29em;
     line-height: 1.5;
+    background-color: #fffbd5;
     text-align: justify;
     padding: 1.5em;
     color: rgba(0,0,0,1);

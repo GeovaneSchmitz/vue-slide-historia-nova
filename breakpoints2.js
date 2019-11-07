@@ -1,30 +1,30 @@
 export default [
   {
-    index: 0,
+    id: 'start',
     label: 'Início',
     noPrint: true
   },
   {
-    index: 1,
+    index: 'cover-1',
     label: 'Capa',
     autoplay: true,
     timeout: 250,
     noPrint: true
   },
   {
-    index: 2,
+    index: 'cover-2',
     label: 'Capa',
     autoplay: true,
     timeout: 250,
     noPrint: true
   },
   {
-    index: 3,
+    index: 'cover-3',
     label: 'Capa',
     showLabel: false
   },
   {
-    index: 4,
+    index: 'cover-4',
     label: 'Capa',
     showLabel: false,
     autoplay: true,
@@ -32,16 +32,16 @@ export default [
     noPrint: true
   },
   {
-    index: 50,
+    index: 'historical-context-1',
     label: 'Contexto Histórico',
     showLabel: true,
     autoplay: true,
     noPrint: true,
     timeout: 130,
-    number: 1
+    number: 10
   },
   {
-    index: 60,
+    index: 'historical-context-2',
     label: 'Contexto Histórico',
     showLabel: true,
     number: 1,
@@ -53,7 +53,7 @@ export default [
     ]
   },
   {
-    index: 6,
+    index: 'new-history-1',
     label: 'O que é Nova História?',
     showLabel: true,
     number: 2,
@@ -72,13 +72,13 @@ export default [
     ]
   },
   {
-    index: 7,
+    index: 'new-history-2',
     label: 'O que é Nova História?',
     showLabel: true,
     number: 3
   },
   {
-    index: 8,
+    index: 'new-history-3',
     label: 'O que é Nova História?',
     showLabel: false,
     autoplay: true,
@@ -86,7 +86,7 @@ export default [
     noPrint: true
   },
   {
-    index: 9,
+    index: 'new-history-4',
     label: 'O que é Nova História?',
     showLabel: false,
     number: 4,
@@ -114,7 +114,7 @@ export default [
     ]
   },
   {
-    index: 9,
+    index: 'new-history-5',
     label: 'O que é Nova História?',
     showLabel: false,
     number: 5,
@@ -128,7 +128,7 @@ export default [
     ]
   },
   {
-    index: 10,
+    index: 'new-history-6',
     label: 'O que é Nova História?',
     showLabel: false,
     number: 6,
@@ -151,7 +151,7 @@ export default [
     ]
   },
   {
-    index: 10,
+    index: 'new-history-7',
     label: 'O que é Nova História?',
     showLabel: false,
     number: 7,
@@ -172,7 +172,7 @@ export default [
     ]
   },
   {
-    index: 10,
+    index: 'new-history-8',
     label: 'O que é Nova História?',
     showLabel: false,
     number: 8,
@@ -193,7 +193,7 @@ export default [
     ]
   },
   {
-    index: 10,
+    index: 'new-history-9',
     label: 'O que é Nova História?',
     showLabel: false,
     number: 9,
@@ -215,16 +215,16 @@ export default [
     ]
   },
   {
-    index: 11,
-    label: 'O que é Nova História?',
-    showLabel: false,
+    index: 'precursors-1',
+    label: 'Precursores',
+    showLabel: true,
     autoplay: true,
     noPrint: true,
     timeout: 130,
     number: 10
   },
   {
-    index: 12,
+    index: 'precursors-2',
     number: 10,
     label: 'Precursores',
     showLabel: true,
@@ -232,6 +232,7 @@ export default [
       'Grã-Bretanha dos anos 30, Lewis Namier e R.H. Tawney rejei' +
       'taram ambos a narrativa dos acontecimentos para alguns tip' +
       'os de história estrutural.',
+      'Alemanha,  por volta de 1900, Karl Lamprecht',
       'Em 1860, o estudioso suíço Jacob Burckhardt publicou um es' +
       'tudo, The Civilization of the Renaissance in Italy, concen' +
       'trado na história cultural e descrevendo mais as tendência' +
@@ -239,20 +240,11 @@ export default [
     ]
   },
   {
-    index: 112,
-    label: 'Quanto é nova a nova história?',
-    showLabel: true,
-    autoplay: true,
-    noPrint: true,
-    number: 11,
-    timeout: 500
-  },
-  {
-    index: 13,
+    index: 'how-new-is-the-new-history',
     number: 11,
     label: 'Quanto é nova a nova história?',
     showLabel: true,
-    topicsPhoto: [
+    topics: [
       'Nos anos 70 e 80',
       'Lucien Febvre e a Marc Bloch, que fundaram a revista Annal' +
       'es em 1929.',
@@ -260,8 +252,8 @@ export default [
     ]
   },
   {
-    index: 14,
-    label: 'Termo “Nova História”',
+    index: '',
+    label: 'new-history-term',
     showLabel: true,
     autoplay: true,
     noPrint: true,
@@ -310,8 +302,8 @@ export default [
     showLabel: true,
     autoplay: true,
     noPrint: true,
-    timeout: 500,
-    number: 14
+    timeout: 130,
+    number: 10
   },
   {
     index: 80,
@@ -331,7 +323,7 @@ export default [
     showLabel: true,
     autoplay: true,
     noPrint: true,
-    timeout: 500,
+    timeout: 130,
     number: 10
   },
   {
@@ -354,18 +346,18 @@ export default [
     showLabel: true,
     autoplay: true,
     noPrint: true,
-    timeout: 500,
+    timeout: 130,
     number: 10
   },
   {
     index: 120,
-    number: 16,
+    number: 17,
     label: 'Problemas das fontes',
     showLabel: true,
     topicsPhoto: [
-      'Ponto de vista',
-      'Evidência oral',
-      'Seleção de evidências visuais'
+      'Explicação estrutural',
+      'Individual ou grupo',
+      'Hitler como exemplo'
     ]
   },
   {
@@ -374,14 +366,14 @@ export default [
     showLabel: true,
     autoplay: true,
     noPrint: true,
-    timeout: 500,
+    timeout: 130,
     number: 10
   },
   {
     index: 140,
     label: 'Problemas de explicação',
     showLabel: true,
-    number: 17,
+    number: 10,
     topicsPhoto: [
       'Explicação estrutural',
       'Individual ou grupo',
@@ -394,12 +386,12 @@ export default [
     showLabel: true,
     autoplay: true,
     noPrint: true,
-    timeout: 500,
-    number: 18
+    timeout: 130,
+    number: 10
   },
   {
     index: 160,
-    number: 19,
+    number: 18,
     label: 'Problemas de síntese',
     showLabel: true,
     topicsPhoto: [
@@ -411,7 +403,7 @@ export default [
   },
   {
     index: 23,
-    number: 20,
+    number: 19,
     label: 'História como processo de conhecimento subjetivo',
     showLabel: true,
     topics: [
@@ -426,7 +418,7 @@ export default [
   },
   {
     index: 24,
-    number: 21,
+    number: 20,
     label: 'História como processo de conhecimento subjetivo',
     showLabel: true,
     topics: [
@@ -439,7 +431,7 @@ export default [
   },
   {
     index: 25,
-    number: 22,
+    number: 21,
     label: 'Referências',
     showLabel: true,
     topics: [

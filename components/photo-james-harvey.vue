@@ -81,7 +81,8 @@ export default {
   box-shadow: 0 .21875em .875em 0 rgba(47, 64, 176, 0.3);
 }
 .igs-breakpoint-14 .igs-photo,
-.igs-breakpoint-15 .igs-photo{
+.igs-breakpoint-15 .igs-photo,
+.igs-breakpoint-16 .igs-photo{
   opacity: 1;
   margin:0;
 }

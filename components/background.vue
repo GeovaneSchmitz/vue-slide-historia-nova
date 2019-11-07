@@ -26,7 +26,7 @@ export default {
     margin:54em 0 0 .5em;
     z-index: 2;
     overflow: hidden;
-    background-color:#fff;
+    background-color:#fffcdf;
     transform: rotate(45deg);
     transition: all .50s;
 }
@@ -35,7 +35,7 @@ export default {
     height: 5em;
     margin:57.5em 0 0 34.5em;
     z-index: 2;
-    background-color:#fff;
+    background-color:#fffcdf;
     transform: rotate(30deg);
 }
 
@@ -47,7 +47,7 @@ export default {
     height: 5em;
     margin:57.5em 0 0 52.5em;
     z-index: 2;
-    background-color:#fff;
+    background-color:#fffcdf;
     transform: rotate(30deg);
 }
 .igs-background-ribbon{
@@ -62,7 +62,7 @@ export default {
 .igs-background-ribbon-white{
     width: 35em;
     height: 100em;
-    background-color: #fff;
+    background-color: #fffcdf;
     z-index: 1;
     transition: all .50s ease-out;
     display: block;
