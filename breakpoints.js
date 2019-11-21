@@ -53,10 +53,16 @@ export default [
     ]
   },
   {
+    index: 7,
+    label: 'O que é Nova História?',
+    showLabel: true,
+    number: 2
+  },
+  {
     index: 6,
     label: 'O que é Nova História?',
     showLabel: true,
-    number: 2,
+    number: 3,
     topics: [
       '<i>La nouvelle histoire</i> - título de uma coleção de en' +
       'saios editada pelo francês Jacques Le Goff;',
@@ -70,12 +76,6 @@ export default [
       'O contraste entre a antiga e a nova história pode ser res' +
       'umido em seis pontos.'
     ]
-  },
-  {
-    index: 7,
-    label: 'O que é Nova História?',
-    showLabel: true,
-    number: 3
   },
   {
     index: 8,
@@ -285,37 +285,17 @@ export default [
     ]
   },
   {
-    index: 16,
-    label: 'Termo “Nova História”',
-    showLabel: true,
-    autoplay: true,
-    noPrint: true,
-    number: 12,
-    timeout: 500
-  },
-  {
-    index: 17,
-    number: 13,
-    label: 'Termo “Nova História”',
-    showLabel: true,
-    topicsPhoto: [
-      'Em 1867, o grande historiador holandês Robert Fruin public' +
-      'ou um ensaio chamado “A Nova Historiografia”, uma defesa d' +
-      'a história científica, rankeana'
-    ]
-  },
-  {
     index: 70,
     label: 'Prós e os contras da mudança',
     showLabel: true,
     autoplay: true,
     noPrint: true,
     timeout: 500,
-    number: 14
+    number: 13
   },
   {
     index: 80,
-    number: 14,
+    number: 13,
     label: 'Prós e os contras da mudança',
     showLabel: true,
     topicsPhoto: [
@@ -332,11 +312,11 @@ export default [
     autoplay: true,
     noPrint: true,
     timeout: 500,
-    number: 10
+    number: 14
   },
   {
     index: 100,
-    number: 15,
+    number: 14,
     label: 'Problemas de definição',
     showLabel: true,
     topicsPhoto: [
@@ -355,11 +335,11 @@ export default [
     autoplay: true,
     noPrint: true,
     timeout: 500,
-    number: 10
+    number: 15
   },
   {
     index: 120,
-    number: 16,
+    number: 15,
     label: 'Problemas das fontes',
     showLabel: true,
     topicsPhoto: [
@@ -375,13 +355,13 @@ export default [
     autoplay: true,
     noPrint: true,
     timeout: 500,
-    number: 10
+    number: 16
   },
   {
     index: 140,
     label: 'Problemas de explicação',
     showLabel: true,
-    number: 17,
+    number: 16,
     topicsPhoto: [
       'Explicação estrutural',
       'Individual ou grupo',
@@ -395,11 +375,11 @@ export default [
     autoplay: true,
     noPrint: true,
     timeout: 500,
-    number: 18
+    number: 17
   },
   {
     index: 160,
-    number: 19,
+    number: 17,
     label: 'Problemas de síntese',
     showLabel: true,
     topicsPhoto: [
@@ -411,7 +391,7 @@ export default [
   },
   {
     index: 23,
-    number: 20,
+    number: 18,
     label: 'História como processo de conhecimento subjetivo',
     showLabel: true,
     topics: [
@@ -426,7 +406,7 @@ export default [
   },
   {
     index: 24,
-    number: 21,
+    number: 19,
     label: 'História como processo de conhecimento subjetivo',
     showLabel: true,
     topics: [
@@ -438,8 +418,16 @@ export default [
     ]
   },
   {
-    index: 25,
-    number: 22,
+    index: 220,
+    label: 'História como processo de conhecimento subjetivo',
+    showLabel: true,
+    autoplay: true,
+    timeout: 100,
+    noPrint: true
+  },
+  {
+    index: 27,
+    number: 20,
     label: 'Referências',
     showLabel: true,
     topics: [
@@ -452,5 +440,4 @@ export default [
       'ulo: Editora Brasiliense, 2008. Cap. 6. p. 69-80.'
     ]
   }
-
 ]

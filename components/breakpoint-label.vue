@@ -53,7 +53,10 @@ export default {
 </script>
 
 <style>
-
+.igs-breakpoint-220 .igs-breakpoint-label,
+.igs-breakpoint-27 .igs-breakpoint-label {
+  color: #fffcdf;
+}
 .igs-breakpoint-label {
   opacity:1;
   color: #87101e;

@@ -50,16 +50,16 @@ export default {
     border-left: solid 0em rgba(255,255,255,0);
     box-shadow: 0 .21875em .875em 0 rgba(47, 64, 176, 0.2);
 }
-.igs-breakpoint-6 .igs-card-quote-card-mentality,
-.igs-breakpoint-8 .igs-card-quote-card-mentality{
+.igs-breakpoint-60 .igs-card-quote-card-mentality,
+.igs-breakpoint-6 .igs-card-quote-card-mentality{
     opacity: 0;
     border-left: solid 2em rgba(255,255,255,0);
     border-right: solid 0em #87101e;
 
 }
-.igs-breakpoint-6 .igs-card-quote-card-mentality-wrapper,
+.igs-breakpoint-60 .igs-card-quote-card-mentality-wrapper,
 .igs-breakpoint-7 .igs-card-quote-card-mentality-wrapper,
-.igs-breakpoint-8 .igs-card-quote-card-mentality-wrapper {
+.igs-breakpoint-6 .igs-card-quote-card-mentality-wrapper {
   display: flex;
 }
 </style>

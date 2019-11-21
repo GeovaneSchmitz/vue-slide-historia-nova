@@ -65,7 +65,9 @@ export default {
   font-weight: 400;
   margin:26.125em 0 0 48em;
 }
-
+.igs-breakpoint-27 .igs-breakpoint-number {
+  color: #fffcdf;
+}
 .igs-breakpoint-number-1,
 .igs-breakpoint-number-2 {
   opacity: 1;

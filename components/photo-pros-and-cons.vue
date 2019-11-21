@@ -48,7 +48,7 @@ export default {
   flex-direction: row;
   align-items: center;
 }
-.igs-breakpoint-17 .igs-photo-wrapper,
+.igs-breakpoint-15 .igs-photo-wrapper,
 .igs-breakpoint-70 .igs-photo-wrapper,
 .igs-breakpoint-80 .igs-photo-wrapper,
 .igs-breakpoint-90 .igs-photo-wrapper{
@@ -90,7 +90,7 @@ export default {
   width: 50em;
   height:42.25em;
 }
-.igs-breakpoint-17 .igs-photo-topics{
+.igs-breakpoint-15 .igs-photo-topics{
   opacity: 0;
 }
 .igs-photo-topics{

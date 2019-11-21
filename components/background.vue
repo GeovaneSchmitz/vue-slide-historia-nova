@@ -30,7 +30,8 @@ export default {
     transform: rotate(45deg);
     transition: all .50s;
 }
-.igs-breakpoint-3 .igs-background-ribbon-edge{
+.igs-breakpoint-3 .igs-background-ribbon-edge,
+.igs-breakpoint-27 .igs-background-ribbon-edge{
     width: 5em;
     height: 5em;
     margin:57.5em 0 0 34.5em;
@@ -59,6 +60,15 @@ export default {
     display: block;
     transform: translateX(-34.5em);
 }
+.igs-breakpoint-27 .igs-background-ribbon{
+    background-color: #87101e;
+    width: 100em;
+    height: 100em;
+    z-index: 1;
+    transition: all .50s;
+    display: block;
+    transform: translateX(0);
+}
 .igs-background-ribbon-white{
     width: 35em;
     height: 100em;
@@ -67,7 +77,10 @@ export default {
     transition: all .50s ease-out;
     display: block;
 }
-
+.igs-breakpoint-27 .igs-background-ribbon-white{
+    opacity:0;
+    transform: translateX(-44.5em);
+}
 .igs-breakpoint-0 .igs-background-ribbon-edge,
 .igs-breakpoint-1 .igs-background-ribbon-edge,
 .igs-breakpoint-2 .igs-background-ribbon-edge,

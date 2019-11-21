@@ -63,7 +63,10 @@ export default {
 </script>
 
 <style>
-
+.igs-breakpoint-27 .igs-breakpoint-topic,
+.igs-breakpoint-220 .igs-breakpoint-topic{
+  color: #fffcdf;
+}
 .igs-breakpoint-topics {
   opacity:1;
   color: #000;
@@ -86,8 +89,16 @@ export default {
   padding-right: .75em;
   font-size: 1.5em;
 }
+.igs-breakpoint-27 .igs-breakpoint-topic-bullet {
+  color: #fffcdf;
+  padding-right: .75em;
+  font-size: 1.5em;
+}
 .igs-breakpoint-topic-content {
   line-height: 1.5;
+}
+.igs-breakpoint-27 .igs-breakpoint-topic-content{
+  opacity:0.9;
 }
 .igs-breakpoint-topics-1,
 .igs-breakpoint-topics-2 {
